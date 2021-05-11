@@ -16,13 +16,13 @@ import { AboutComponent } from './about/about.component';
     PortComponent,
     SkillComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
     
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
 
   ],
   providers: [],

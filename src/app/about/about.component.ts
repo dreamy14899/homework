@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Data } from '@angular/router';
+import { BackendService } from '../backend.service';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  about:Data[];
+  constructor(private backendService: BackendService) {
+    this.about = [];
+   }
 
   ngOnInit(): void {
+    this.about = this.backendService.getAbout();
+    console.log(this.about);
   }
 
 }

@@ -8,7 +8,7 @@ import { Component, OnInit, ViewChild } from '@angular/core'
 })
 export class AppComponent implements OnInit {
 
-  title = "homework1"
+  title = "homework2"
   constructor() {}
  
   ngOnInit(): void {
